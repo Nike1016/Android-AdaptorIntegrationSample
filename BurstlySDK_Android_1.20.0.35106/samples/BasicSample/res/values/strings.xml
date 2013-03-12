@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">BasicSample</string>
+    <string name="show_ad">Show Ad</string>
+    <string name="retrieving_ad">Retrieving Ad</string>
+</resources>

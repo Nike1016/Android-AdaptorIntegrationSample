@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:burstly="http://burstly.com/lib/ui/schema"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent">
+    <com.burstly.lib.ui.BurstlyView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            burstly:zoneId="0255195579157224033"
+            burstly:burstlyViewId="MainMenuBanner"
+            burstly:defaultSessionLife="30"
+            android:id="@+id/bannerview"/>
+    <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:textColor="#B8860B"
+            android:textColorHighlight="#FFAAAA"
+            android:textStyle="bold"
+            android:textSize="16pt"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_weight="1"
+            android:id="@+id/currencyText"
+            />
+    <Button android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/wallButton"
+            android:text="Show OfferWall"/>
+    <LinearLayout android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal">
+        <Button
+                android:layout_width="fill_parent"
+                android:layout_weight=".33"
+                android:layout_height="wrap_content"
+                android:text="Add 5"
+                android:id="@+id/addButton"/>
+        <Button
+                android:layout_width="fill_parent"
+                android:layout_weight=".33"
+                android:layout_height="wrap_content"
+                android:text="Sub 10"
+                android:id="@+id/subtractButton"/>
+        <Button
+                android:layout_width="fill_parent"
+                android:layout_weight=".33"
+                android:layout_height="wrap_content"
+                android:text="Refresh"
+                android:id="@+id/refreshButton"/>
+    </LinearLayout>
+
+</LinearLayout>
+
