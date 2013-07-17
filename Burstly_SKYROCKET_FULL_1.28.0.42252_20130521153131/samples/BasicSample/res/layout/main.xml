@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:burstly="http://burstly.com/lib/ui/schema"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/background_burstly">
+
+    <com.burstly.lib.ui.BurstlyView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        burstly:zoneId="0959195979157244033"
+        burstly:burstlyViewId="MainMenuBanner"
+        burstly:defaultSessionLife="30"
+        android:id="@+id/bannerview"/>
+
+    <Button android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="@string/show_ad"
+        android:id="@+id/button"
+        style="@style/BurstlyButton"/>
+
+</RelativeLayout>

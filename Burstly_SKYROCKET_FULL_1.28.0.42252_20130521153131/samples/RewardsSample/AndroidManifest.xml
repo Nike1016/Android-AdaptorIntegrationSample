@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.burstly.rewardssamplecl"
+          android:versionCode="1"
+          android:versionName="1.0">
+<!-- There is a known issue with some third-party SDKs when setting target to 17 -->
+<uses-sdk android:minSdkVersion="7" android:targetSdkVersion="16"/>
+<application android:label="@string/app_name" android:icon="@drawable/icon">
+    <activity android:name=".MainActivity"
+              android:label="@string/app_name"
+              android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN"/>
+            <category android:name="android.intent.category.LAUNCHER"/>
+        </intent-filter>
+    </activity>
+
+         <!-- Begin Burstly Required Activities -->
+
+        <!-- Admob =================================================== -->
+        <activity
+                android:name="com.google.ads.AdActivity"
+                android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"/>
+
+        <!-- mandatory permissions -->
+        <!-- <uses-permission android:name="android.permission.INTERNET"/> -->
+        <!-- <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/> -->
+        <!-- ========================================================= -->
+
+
+        <!-- optional permissions -->
+        <!-- <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> -->
+        <!-- <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> -->
+        <!-- <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> -->
+        <!-- <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> -->
+        <!-- ========================================================= -->
+
+     
+        <!-- Burstly ================================================= -->
+        <activity
+                android:name="com.burstly.lib.component.networkcomponent.burstly.BurstlyFullscreenActivity"
+                android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+                android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+
+        <!-- mandatory permissions -->
+        <!-- <uses-permission android:name="android.permission.INTERNET"/> -->
+        <!-- <uses-permission android:name="android.permission.READ_PHONE_STATE" /> -->
+        <!-- <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/> -->
+
+
+        <!-- optional permissions -->
+        <!-- <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> -->
+        <!-- <uses-permission android:name="android.permission.READ_CALENDAR"/> -->
+        <!-- <uses-permission android:name="android.permission.WRITE_CALENDAR"/> -->
+        <!-- ========================================================= -->
+
+
+        <!-- Greystripe ============================================== -->
+        <activity
+                android:name="com.greystripe.sdk.GSFullscreenActivity"
+                android:configChanges="keyboard|keyboardHidden|orientation|screenSize"/>
+
+        <!-- mandatory permissions -->
+        <!-- <uses-permission android:name="android.permission.INTERNET"/> -->
+        <!-- <uses-permission android:name="android.permission.READ_PHONE_STATE" /> -->
+        <!-- <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> -->
+        <!-- ========================================================= -->
+
+
+   <!-- Inmobi ================================================== -->
+        <activity
+            android:name="com.inmobi.androidsdk.IMBrowserActivity"
+            android:configChanges="keyboardHidden|orientation|keyboard|smallestScreenSize|screenSize" 
+            android:hardwareAccelerated="true" />
+
+        <!-- mandatory permissions -->
+        <!-- <uses-permission android:name="android.permission.INTERNET" /> -->
+        <!-- <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> -->
+
+        <!-- optional permissions -->
+        <!-- <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> -->
+        <!-- <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> -->
+        <!-- <uses-permission android:name="android.permission.CALL_PHONE" /> -->
+        <!-- <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> -->
+        <!-- <uses-permission android:name="android.permission.VIBRATE"/> -->
+        <!-- <uses-permission android:name="android.permission.RECORD_AUDIO"/> -->
+        <!-- <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/> -->
+        <!-- ========================================================= -->
+
+
+        <!-- Jumptap ================================================== -->
+        <activity
+                android:name="com.burstly.lib.component.networkcomponent.jumptap.JumptapActivity"
+                android:configChanges="keyboard|keyboardHidden|orientation"
+                android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+
+        <!-- mandatory permissions -->
+        <!-- <uses-permission android:name="android.permission.INTERNET" /> -->
+        <!-- <uses-permission android:name="android.permission.READ_PHONE_STATE" /> -->
+        <!-- <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> -->
+
+
+        <!-- optional permissions -->
+        <!-- <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> -->
+        <!-- ========================================================== -->
+
+
+        <!-- Millennial =============================================== -->
+        <activity
+                android:name="com.millennialmedia.android.MMActivity"
+                android:configChanges="keyboardHidden|orientation|keyboard"
+                android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity
+                android:name="com.millennialmedia.android.VideoPlayer"
+                android:configChanges="keyboardHidden|orientation|keyboard"
+                android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+
+        <!-- mandatory permissions -->
+        <!-- <uses-permission android:name="android.permission.INTERNET"/> -->
+        <!-- <uses-permission android:name="android.permission.READ_PHONE_STATE"/> -->
+        <!-- <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/> -->
+        <!-- <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/> -->
+        <!-- ========================================================== -->
+
+    </application>
+
+    <!-- Used by all -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <!-- Burstly, Admob, Greystripe, Inmobi, Jumptap, Medialets, Millennial -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <!-- Burstly, Jumptap, Medialets, Millennial -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <!-- Burstly, Medialets, Millennial, Inmobi, Greystripe -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <!-- Inmobi, Jumptap -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <!-- Inmobi, Medialets -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <!-- Burstly, Inmobi -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <!-- Inmobi -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+ 
+    <!-- Inmobi -->
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    
+    <!-- Inmobi -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    
+    <!-- Greystripe -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    
+    <!-- Greystripe -->
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    
+    <!-- optional Burstly permissions -->
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    
+    <!-- optional Burstly permissions, Greystripe -->
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+</manifest>

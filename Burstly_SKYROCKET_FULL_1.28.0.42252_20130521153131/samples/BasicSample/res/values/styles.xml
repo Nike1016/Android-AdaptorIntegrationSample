@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="BurstlyButton" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:paddingLeft">40px</item>
+        <item name="android:paddingTop">20px</item>
+        <item name="android:paddingRight">40px</item>
+        <item name="android:paddingBottom">20px</item>
+        <item name="android:textSize">20.0dp</item>
+        <item name="android:shadowColor">#000000</item>
+        <item name="android:shadowRadius">1.5</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:background">@drawable/burstly_button</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:singleLine">true</item>
+    </style>
+</resources>

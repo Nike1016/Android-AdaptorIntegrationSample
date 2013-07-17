@@ -1,0 +1,29 @@
+build: custom
+version: 1.28.0.42252
+jar: BurstlySDK.zip
+features:
+	greystripe
+	admob
+	inmobi
+	millennial
+	jumptap
+	apptracking
+	core
+libs:
+	AdMobSDK-6.4.1.jar
+	GreystripeSDK-2.2.jar
+	InMobiSDK_AdNetwork-3.7.0.jar
+	InMobiSDK_Commons-3.7.0.jar
+	JumpTapSDK-2.5.0.0.jar
+	MillennialSDK-5.0.1.jar
+	com.h2.tinyspring-tinyspring-1.0.1-with-android-logging.jar
+	json-core&mapper-1.9.11.jar
+servers:
+	req.appads.com
+	req1.appads.com
+	req2.appads.com
+	req3.appads.com
+	lv.appads.com
+	lv1.appads.com
+	lv2.appads.com
+	lv3.appads.com
