@@ -23,6 +23,7 @@ import com.burstly.lib.conveniencelayer.Burstly;
 import com.burstly.lib.conveniencelayer.BurstlyActivity;
 import com.burstly.lib.conveniencelayer.BurstlyBanner;
 
+
 /**
  * Activity with the demonstration of intagrated library.
  * <p>
