@@ -2,7 +2,7 @@
 
 Before you begin implementing your adapter, please ensure that you have the following  in place:
 
-1. Ensure that you include the link to the Burstly SDK (enclosed) in your classpath.
+1. Ensure that you include the link to the [Burstly SDK](https://controls.skyrocketapp.com/SDKDownload) in your classpath. Download the latest Lite version.
 2. Review the Java Docs (enclosed) for the following interfaces
      - com.burstly.lib.component.IBurstlyAdaptor
      - com.burstly.lib.feature.networks.IAdaptorFactory
