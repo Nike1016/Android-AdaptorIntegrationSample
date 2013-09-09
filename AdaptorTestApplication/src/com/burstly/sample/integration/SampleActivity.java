@@ -19,9 +19,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
-import com.burstly.conveniencelayer.Burstly;
-import com.burstly.conveniencelayer.BurstlyActivity;
-import com.burstly.conveniencelayer.BurstlyBanner;
+import com.burstly.lib.conveniencelayer.Burstly;
+import com.burstly.lib.conveniencelayer.BurstlyActivity;
+import com.burstly.lib.conveniencelayer.BurstlyBanner;
 
 /**
  * Activity with the demonstration of intagrated library.
